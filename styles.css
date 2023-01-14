@@ -1,0 +1,131 @@
+/* common font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@700&display=swap');
+
+body{
+  font-family: 'Work Sans', sans-serif;
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.container-menu{
+  display: flex;
+  justify-content: center;
+  margin:30px 50px 0 50px;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 870px;
+}
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.nav a{
+  list-style: none;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #424242;
+}
+.container-heading{
+  width: 800px;
+  margin: 0 100px;
+}
+.container-heading > h2{
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 30px;
+}
+.container-heading >p, .btn-main{
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+.btn{
+  background-color: #FF900E;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 20px;
+}
+.banner-img{
+  margin-top: 50px;
+}
+.banner-img img{
+  height: 100%;
+  width: 100%;
+}
+.img-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+.split-img{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  
+}
+.split-img>img{
+  flex: 1;
+  
+}
+.love-container{
+  display: flex;
+  justify-content: center;
+}
+.love-heading{
+  font-weight: 500;
+  font-size: 25px;
+  border-left: 2px solid #FF900E;
+  padding-left: 20px;
+}
+.love-container>div img{
+  width: 100%;
+}
+.icon-container{
+  display: flex;
+  justify-content: space-between;
+}
+.icon, .sponsor{
+  text-align: center;
+}
+.sponsor-heading{
+  font-weight: 500;
+  font-size: 30px;
+}
+.sponsor-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  
+}
+.sponsor-container>img{
+  width: 50px;
+  height: 30px;
+}
+.personal{
+  display: flex;
+  justify-content: center;
+}
+.box{
+  width:100px;
+  height:100px;
+  border:2px solid brown;
+  background-color: yellow;
+  transition:width 2s, height 2s, transform 2s;
+}
+.box:hover{
+  width:100px;
+  height:100px;
+  transform:rotate(180deg); 
+}
+.footer-copyright{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
