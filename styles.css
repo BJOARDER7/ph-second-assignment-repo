@@ -1,12 +1,17 @@
 /* common font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@700&display=swap');
 
+/* Common section */
 body{
   font-family: 'Work Sans', sans-serif;
   background-color: white;
-  margin: 0;
-  
+  margin: 0; 
 }
+.main-container, .banner-img, .img-container, .love-container, .fact, .icon-container, .sponsor-container, .personal, .footer-copyright{
+  width: 80%;
+  margin: auto;
+}
+/* Nav section */
 .container{
   background-color: rgba(255, 144, 14, 0.1);
   margin:0;
@@ -47,26 +52,25 @@ body{
 }
 .main-container{
   height: 200px;
-  margin: 0;
-}
-.main-container, .banner-img, .img-container, .love-container, .fact, .icon-container, .sponsor-container, .personal, .footer-copyright{
-  width: 80%;
   margin: auto;
-  
 }
+
+/*Brand heading section */
 .main-heading > h2{
   text-align: center;
   font-weight: 700;
   font-size: 5vw;
+  margin: auto;
 }
 .main-container > p{
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.5vw;
   text-align: center;
-  padding-bottom: 10px;
+  padding: 10px 70px;
+  
 }
 .btn-main{
-  padding-top: 10px;
+  padding-top: 40px;
   padding-bottom: 50px;
   text-align: center;
 }
@@ -79,12 +83,13 @@ body{
   padding: 10px;
   color: white; 
 }
+/* Banner section */
 .banner-img img{
   height: 100%;
   width: 100%;
   padding-bottom: 10px;
 }
-
+/* Feature & Image section */
 .img-container{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -107,9 +112,22 @@ body{
 .div-aside{
    padding: 10px 50px 10px 20px;
 } 
+/* Love & enjoy features section */
 .love-container{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
+}
+.love-enjoy{
+  padding-right: 40px;
+}
+.love-enjoy h3{
+  font-weight: 500;
+  font-size: 2.3vw;
+}
+.love-enjoy p{
+  font-weight: 400;
+  font-size: 1.2vw;
 }
 .love-heading{
   font-weight: 500;
@@ -123,13 +141,14 @@ body{
 }
 .img-btn button{
   position: absolute;
-  bottom: 0.7em;
-  right: 8em;
+  top: 25em;
+  right: 15em;
   
 }
 .love-container>div img{
   width: 100%;
 }
+/* Some facts & icon section */
 .fact{
   margin-top: 50px;
 }
@@ -143,12 +162,13 @@ body{
   line-height: 2px;
   margin: 30px 0;
 }
+/* Sponsor section */
 .sponsor{
   margin-top: 70px;
 }
 .sponsor-heading{
   font-weight: 500;
-  font-size: 30px; 
+  font-size: 3vw; 
 }
 .sponsor-container{
   display: flex;
@@ -157,42 +177,127 @@ body{
   
 }
 .sponsor-container>img{
-  width: 50px;
+  width: 10%;
   height: 30px;
 }
+/* Personal section */
 .personal{
   display: flex;
   justify-content: center;
   margin-top: 70px;
 }
+.personal-heading{
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.5vw;
+}
+.personal-para{
+  font-weight: 400;
+  font-size: 1.2vw;
+  text-align: justify;
+  padding-right: 20px;
+}
 .box{
-  width:100px;
+  width:50%;
   height:100px;
   border:2px solid brown;
   background-color: yellow;
   transition:width 2s, height 2s, transform 2s;
 }
 .box:hover{
-  width:100px;
+  width:50%;
   height:100px;
   transform:rotate(180deg); 
 }
+/* <!-- Footer section --> */
 .footer-copyright{
   text-align: center;
   background-color: rgba(255, 144, 14, 0.1);
+  font-size: 1.5vw;
   padding: 10px 0;
   margin-top: 50px;
   margin-bottom: 30px; 
 }
-/* media query */
+/* media query of small device*/
 @media screen and (max-width:576px) {
   .nav, .nav-menu{
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
   }
+  .nav-text{
+    font-weight: 500;
+    font-size: 5vw;
+    height: 30px;
+  }
   .btn-main{
-    padding-top: 50px;
-  padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .nav a{
+    
+    font-size: 3vw;
+    font-weight: 400;
+    
+  }
+  .img-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding:30px;
+    margin: 5px auto;
+  }
+  .split-img{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .love-container{
+    display: block;
+    justify-content: center;
+    padding-left: 60px;
+  }
+  .img-btn{
+    padding-top: 5px;
+  }
+  .img-btn button{
+    position: absolute;
+    top: 50em;
+    right: 30em;
+  }
+  .fact{
+    padding-top: 5px;
+  }
+  .icon-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+  .sponsor{
+    padding: 10px 0;
+  }
+  
+  .sponsor-heading{
+    font-weight: 400;
+    font-size: 4vw; 
+  }
+  .spon-para{
+    font-weight: 400;
+    font-size: 2vw;
+  }
+  .sponsor-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+        
+  }
+  .sponsor-container>img{
+    width: 10vw;
+    height: 30px;
+    margin: auto;
+  }
+  .footer-copyright{
+    font-size: 2vw;
+    margin-top: 10px;
+    margin-bottom: 10px; 
   }
 }
