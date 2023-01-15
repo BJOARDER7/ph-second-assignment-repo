@@ -48,7 +48,7 @@ body{
   height: 200px;
   margin: 0;
 }
-.main-container, .banner-img, .love-container, .fact, .icon-container, .sponsor-container, .personal, .footer-copyright{
+.main-container, .banner-img, .img-container, .love-container, .fact, .icon-container, .sponsor-container, .personal, .footer-copyright{
   width: 80%;
   margin: auto;
   
@@ -76,7 +76,8 @@ body{
   font-size: 20px;
   border: none;
   border-radius: 5px;
-  padding: 10px; 
+  padding: 10px;
+  color: white; 
 }
 .banner-img img{
   height: 100%;
@@ -86,28 +87,26 @@ body{
 
 .img-container{
   display: grid;
-  grid-template-columns: 400px 400px;
-  
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  gap: 5px;
-  padding: 40px 150px;
-  margin: 20px auto; 
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding:40px 150px;
+  margin: 5px auto; 
 }
 .split-img{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px; 
 }
-.split-img>div{
+ .split-img>div{
   flex: 1;
 }
-.div-aside{
-  width: 540px;
-  height: 300px;
-  padding: 10px 50px 10px 20px;
+.split-img img{
+  width: 95%;
 }
+
+.div-aside{
+   padding: 10px 50px 10px 20px;
+} 
 .love-container{
   display: flex;
   justify-content: center;
